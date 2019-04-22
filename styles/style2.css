@@ -67,9 +67,11 @@ body {
 	width: 50px;
 	height: 100vh;
 	background-color: red;
-	z-index: 30000;
+	z-index: 150000;
 	right: 0;
 	transition: ease all 0.4s;
+	pointer-events: all;
+
 }
 
 .p-bar {
