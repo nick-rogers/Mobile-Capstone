@@ -3,6 +3,7 @@ body {
 	background-color: purple;
 	overflow: hidden;
 	/*overflow-y: auto;*/
+	overflow-y: auto;
 }
 
 input {
@@ -15,6 +16,7 @@ input {
 .nav-wrap {
 	display: block;
 }
+
 
 .home-button-div {
 	display: block;
@@ -128,6 +130,85 @@ input {
 
 
 
+/* ----------------------- OBJECT CONTENT ------------------ */
+
+#mobile-content {
+	display: block;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: 700000;
+	top: 0;
+	/*
+	background-color: #222222;
+	background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(34,34,34,1) 100%);
+	opacity: 0.85;
+	background-image: url(../images/mob-over.png);
+	background-size: 85% 100%;
+	*/
+	background-position: center;
+	background-repeat: no-repeat;
+	pointer-events: none;
+	display: none;
+}
+
+
+
+#mob-object-title {
+	margin-top: 11vh;
+	display: block;
+	font-family: sans-serif;
+	font-size: 80px;
+	color: #f0f0f0;
+	text-align: center;
+}
+
+
+#mob-date {
+	display: block;
+	font-family: sans-serif;
+	font-size: 50px;
+	color: #f0f0f0;
+	text-align: center;
+}
+
+
+#mob-x {
+	display: block;
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	top: 0;
+	right: 0;
+	margin-right: 12vw;
+	margin-top: 40px;
+	background-image: url(../images/mob-x.svg);
+	background-size: 100% 100%;
+	pointer-events: auto;
+}
+
+
+#mob-body {
+	display: block;
+	position: absolute;
+	width: 72vw;
+	background-color: #222222;
+	margin-left: 14vw;
+	top: 0;
+	margin-top: 63vh;
+	font-family: sans-serif;
+	font-size: 42px;
+	color: white;
+	line-height: 62px;
+	padding-left: 20px;
+	border-style: solid;
+	border-color: #f0f0f0;
+	border-width: 0px 0px 0px 4px;
+}
+
+
+
+
 
 
 
@@ -136,6 +217,30 @@ input {
 
 
 /*--------------------------- Main scroll section ------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -371,6 +476,7 @@ input {
 	z-index: 500000;
 	opacity: 1;
 	pointer-events: none;
+	display: none;
 }
 
 

@@ -81,7 +81,7 @@ $('.mobile-section').click(function(){
 
 	// Turns off the ability to scroll and hides nav
 	toggleOverflow();
-	//hideShowNav();
+	hideShowNav();
 
 	$('.tri-con').css('display', 'block');
 
@@ -105,10 +105,20 @@ $('.mobile-section').click(function(){
 	$('.fill1').css('bottom', '0');
 	$('.fill2').css('top', '0');
 
+
+
+	$('#mobile-content').css('display', 'block');
+
+
+
+
 	setTimeout(function(){
 		$('.mi').css('clip-path', 'none');
 		$('.mi').css('webkit-clip-path', 'none');
 	}, 175);
+
+
+
 
 
 });
@@ -120,11 +130,11 @@ $('.mobile-section').click(function(){
 
 
 // Function to shrink and return division to its default status 
-$('#h-b').click(function(){
+$('#mob-x').click(function(){
 
 	// Toggle the navigation elements and enable scroll
 	toggleOverflow();
-	//hideShowNav();
+	hideShowNav();
 
 	$('.tri-con').css('display', 'none');
 
@@ -138,6 +148,12 @@ $('#h-b').click(function(){
 	$('.split1').css('margin-top', '-175px');
 	$('.split2').css('margin-top', '75px');
 	$('.fill').css('height', '0%');
+
+
+
+	$('#mobile-content').css('display', 'none');
+
+
 
 
 	$(".mob-image").css({
