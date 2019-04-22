@@ -1,0 +1,132 @@
+body {
+	margin: 0;
+	background-color: purple;
+
+}
+
+
+
+/*----------------------------- Header ----------------------*/
+
+
+.home-button-div {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 280px;
+	top: 0;
+	z-index: 10000;
+	text-align: center;
+	pointer-events: none;
+}
+
+#h-b {
+	display: inline-block;
+	width: 450px;
+	height: 220px;
+	margin-top: 40px;
+	background-size: 100% 100%;
+	background-image: url(../images/mobile-home.svg);
+	background-repeat: no-repeat;
+	cursor: pointer;
+	pointer-events: all;
+}
+
+
+
+.info-div {
+	display: block;
+	position: fixed;
+	width: 100px;
+	height: 100px;
+	z-index: 20000;
+	margin-top: 60px;
+	margin-left: 60px;
+}
+
+.mobile-info {
+	display: block;
+	width: inherit;height: inherit;
+	background-image: url(../images/info.svg);
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+
+
+/*----------------------------- Progress Bar ----------------------*/
+
+
+
+.prog {
+	display: block;
+	position: fixed;
+	width: 30px;
+	height: 100vh;
+	background-color: red;
+	z-index: 30000;
+	right: 0;
+	cursor: pointer;
+	transition: ease all 0.4s;
+}
+
+.p-bar {
+	display: block;
+	width: inherit;
+	position: absolute;
+	height: 0px;
+	background-color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.over {
+	display: block;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	pointer-events: none;
+	z-index: 50000;
+	background-image: url(../images/Screen-20.png);
+	background-size: 100% 120%;
+	opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.scroll {
+	display: block;
+	position: absolute;
+	width: 100vw;
+	height: 50000px;
+	background-color: orange;
+	background-image: url(../images/Screen-20.png);
+	background-size: 100% 100%;
+	z-index: 5000;
+}
+
