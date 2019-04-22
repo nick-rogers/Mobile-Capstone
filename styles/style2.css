@@ -64,12 +64,11 @@ body {
 .prog {
 	display: block;
 	position: fixed;
-	width: 30px;
+	width: 50px;
 	height: 100vh;
 	background-color: red;
 	z-index: 30000;
 	right: 0;
-
 	transition: ease all 0.4s;
 }
 

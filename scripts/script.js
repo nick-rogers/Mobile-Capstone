@@ -192,7 +192,24 @@ function clickHold(){
 }
 
 
+$('.prog').mousedown(function(){
 
+	console.log('down');
+	$('.prog').css('width', '175px');
+
+}).mouseup(function(){
+
+	$('.prog').css('width', '50px');
+	console.log('up');
+
+});
+
+
+
+
+
+
+/*
 var timeoutId = 0;
 
 $('#progID').on('mousedown', function() {
@@ -200,7 +217,7 @@ $('#progID').on('mousedown', function() {
 }).on('mouseup mouseleave', function() {
     clearTimeout(timeoutId);
 });
-
+*/
 
 
 
