@@ -2,10 +2,11 @@ $(document).ready(function(){
 
 
 
+
+
+
 var open = false;
-
 $('.prog').click(function(){
-
 	if(open){
 		$('.prog').css('width', '30px');
 		open = false;
@@ -13,7 +14,6 @@ $('.prog').click(function(){
 		$('.prog').css('width', '150px');
 		open = true;
 	}
-
 });
 
 
@@ -26,10 +26,7 @@ $('.prog').click(function(){
 // Scroll function 
 var scrolled = 0, percentage;
 $(document).scroll(function() {
-    console.log($(document).scrollTop());
     scrolled = $(document).scrollTop();
-    percentage = Math.round(($(document).scrollTop()/48250)*100);
-    console.log(percentage);
     $('.p-bar').css('height', Math.round($(document).scrollTop()/27)+'px');
 })
 
@@ -82,6 +79,7 @@ $('.mobile-section').click(function(){
 
 	setTimeout(function(){
 		$('.mi').css('clip-path', 'none');
+		$('.mi').css('webkit-clip-path', 'none');
 	}, 175);
 
 
@@ -104,6 +102,7 @@ $('#h-b').click(function(){
 
 	setTimeout(function(){
 		$('.mi').css('clip-path', 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)');
+		$('.mi').css('webkit-clip-path', 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)');
 	}, 300);
 
 
