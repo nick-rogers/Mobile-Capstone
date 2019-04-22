@@ -74,6 +74,7 @@ body {
 	margin: 0;
 	border-width: 0px;
 	border-style: none;
+	padding: 0;
 }
 
 .p-bar {
@@ -86,6 +87,8 @@ body {
 	pointer-events: none;
 	top: 0;
 }
+
+
 
 
 
@@ -312,18 +315,72 @@ body {
 
 
 
+.dragTest {
+	display: block;
+	position: fixed;
+	width: 500px;
+	height: 50px;
+	background-color: orange;
+	z-index: 300000;
+	margin-top: 300px;
+	display: none;
+}
+
+#dt {
+	display: block;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-color: blue;
+}
 
 
 
 
 
+.slider {
+	display: block;
+	position: fixed;
+	width: 800px;
+	height: 80px;
+	background-color: orange;
+	z-index: 500000;
+	margin-top: 400px;
+}
+
+.sliderz {
+	-webkit-appearance: none;  /* Override default CSS styles */
+	  appearance: none;
+	  width: 100%; /* Full-width */
+	  height: 25px; /* Specified height */
+	  background: #d3d3d3; /* Grey background */
+	  outline: none; /* Remove outline */
+	  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+	  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+	  transition: opacity .2s;
+}
 
 
+.sliderz:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
 
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.sliderz::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
 
-
-
-
+.sliderz::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
 
 
 
