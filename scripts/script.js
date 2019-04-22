@@ -4,20 +4,16 @@ $(document).ready(function(){
 
 
 
-/*
-var open = false;
-$('.prog').click(function(){
-	if(open){
-		$('.prog').css('width', '30px');
-		open = false;
-	}else {
-		$('.prog').css('width', '150px');
-		open = true;
-	}
+$('#vert-range').click(function(){
+	console.log('vert range');
 });
-*/
 
 
+
+//document.getElementById("vert-range").value = "75";
+
+
+$('.vertical-slider').css('background-color', 'red');
 
 
 

@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	background-color: purple;
-
+	overflow: hidden;
 }
 
 
@@ -75,6 +75,7 @@ body {
 	border-width: 0px;
 	border-style: none;
 	padding: 0;
+	display: none;
 }
 
 .p-bar {
@@ -140,7 +141,7 @@ body {
 	width: 100vw;
 	height: 50000px;
 	background-color: orange;
-	background-image: url(../images/Screen-20.png);
+	/*background-image: url(../images/Screen-20.png);*/
 	background-size: 100% 100%;
 	z-index: 5000;
 }
@@ -254,6 +255,7 @@ body {
 
 
 
+
 .mob-image {
 	position: absolute;
 	display: block;
@@ -315,75 +317,6 @@ body {
 
 
 
-.dragTest {
-	display: block;
-	position: fixed;
-	width: 500px;
-	height: 50px;
-	background-color: orange;
-	z-index: 300000;
-	margin-top: 300px;
-	display: none;
-}
-
-#dt {
-	display: block;
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	background-color: blue;
-}
-
-
-
-
-
-.slider {
-	display: block;
-	position: fixed;
-	width: 800px;
-	height: 80px;
-	background-color: orange;
-	z-index: 500000;
-	margin-top: 400px;
-}
-
-.sliderz {
-	-webkit-appearance: none;  /* Override default CSS styles */
-	  appearance: none;
-	  width: 100%; /* Full-width */
-	  height: 25px; /* Specified height */
-	  background: #d3d3d3; /* Grey background */
-	  outline: none; /* Remove outline */
-	  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-	  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-	  transition: opacity .2s;
-}
-
-
-.sliderz:hover {
-  opacity: 1; /* Fully shown on mouse-over */
-}
-
-/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
-.sliderz::-webkit-slider-thumb {
-  -webkit-appearance: none; /* Override default look */
-  appearance: none;
-  width: 25px; /* Set a specific slider handle width */
-  height: 25px; /* Slider handle height */
-  background: #4CAF50; /* Green background */
-  cursor: pointer; /* Cursor on hover */
-}
-
-.sliderz::-moz-range-thumb {
-  width: 25px; /* Set a specific slider handle width */
-  height: 25px; /* Slider handle height */
-  background: #4CAF50; /* Green background */
-  cursor: pointer; /* Cursor on hover */
-}
-
-
-
 
 
 
@@ -403,6 +336,85 @@ body {
   -o-transition: none !important;
   transition: none !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.vertical-slider {
+	display: block;
+	position: fixed;
+	width: 100px;
+	height: 100vh;
+	background-color: yellow;
+	right: 0;
+	z-index: 500000;
+	pointer-events: auto;
+}
+
+
+
+#vert-range {
+  position: absolute;
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100vh; /* Full-width */
+  height: 100px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  transform: rotate(90deg);
+  top: 0;
+  z-index: 500000;
+  margin-left: -47vh;
+  margin-top: 820px;
+}
+
+
+
+#vert-range:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+#vert-range::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 90px; /* Set a specific slider handle width */
+  height: 90px; /* Slider handle height */
+  background: white; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+#vert-range::-moz-range-thumb {
+  width: 90px; /* Set a specific slider handle width */
+  height: 90px; /* Slider handle height */
+  background: white; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+
+
+
 
 
 
