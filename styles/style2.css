@@ -248,6 +248,7 @@ body {
 	text-align: center;
 	z-index: 80000;
 	pointer-events: none;
+	/*transition: ease all 0.8s;*/
 }
 
 
@@ -260,6 +261,7 @@ body {
 	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 	background-image: url(../images/im03.png);
 	background-size: 100% 100%;
+	transition: ease all 0.8s;
 }
 
 
