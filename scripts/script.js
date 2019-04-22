@@ -196,6 +196,7 @@ $('.prog').mousedown(function(){
 
 	console.log('down');
 	$('.prog').css('width', '175px');
+	$('.prog').css('background-color', 'green');
 
 }).mouseup(function(){
 
@@ -203,6 +204,8 @@ $('.prog').mousedown(function(){
 	console.log('up');
 
 });
+
+
 
 
 
