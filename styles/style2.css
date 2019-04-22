@@ -70,17 +70,21 @@ body {
 	z-index: 150000;
 	right: 0;
 	transition: ease all 0.4s;
-	pointer-events: all;
-
+	pointer-events: auto;
+	margin: 0;
+	border-width: 0px;
+	border-style: none;
 }
 
 .p-bar {
+	position: absolute;
 	display: block;
 	width: inherit;
 	position: absolute;
 	height: 0px;
 	background-color: yellow;
 	pointer-events: none;
+	top: 0;
 }
 
 
