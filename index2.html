@@ -5,19 +5,32 @@
     <title>Divided Time Mobile</title>
   <link rel="stylesheet" href="styles/style2.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1" />-->
+
   </head>
   <body>
 
 
-  <!--
-    <div class="slider">
-  	  <input type="range" min="1" max="100" value="50" class="sliderz" id="myRange">
-    </div>
-  -->
+
+  <div id="count">20</div>
+
+
+  <script>
+      function updateSlider(slideAmount){
+      var sliderDiv = document.getElementById("vert-range");
+      console.log(slideAmount);
+      $('#count').text(slideAmount);
+      }
+
+      function sliderClick(){
+        console.log('slider click');
+      }
+  </script>
+
 
 
   <div class="vertical-slider">
-    <input type="range" min="1" max="100" value="0" id="vert-range">
+    <input type="range" min="1" max="100" value="0" id="vert-range" oninput="updateSlider(this.value)">
   </div>
 
 
@@ -32,8 +45,8 @@
 
 
 
-  <!-- NAVIGATION ELEMENTS -->
-  <div class="nav-wrap">
+<!-- NAVIGATION ELEMENTS -->
+<div class="nav-wrap">
 	  <div class="home-button-div">
 	  	<a id="h-b"></a>
 	  </div>
@@ -112,13 +125,7 @@
 
 
 
-
-
-
-
-
-
-
+  <script src="scripts/rangeslider.min.js" type="text/javascript"></script>
   <script src="scripts/script.js" type="text/javascript"></script>
   </body>
 </html>

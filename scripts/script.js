@@ -4,16 +4,48 @@ $(document).ready(function(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$("#vert-range").bind("wheel", function() {
+    $("#vert-range").blur();
+});
+
+
+
 $('#vert-range').click(function(){
 	console.log('vert range');
 });
 
 
+function updateSlider(slideAmount){
+	var sliderDiv = document.getElementById("vert-range");
+    console.log(sliderDiv);
+}
+
+
+
+
+
+
 
 //document.getElementById("vert-range").value = "75";
 
-
-$('.vertical-slider').css('background-color', 'red');
 
 
 

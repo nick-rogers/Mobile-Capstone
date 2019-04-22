@@ -2,8 +2,12 @@ body {
 	margin: 0;
 	background-color: purple;
 	overflow: hidden;
+	/*overflow-y: auto;*/
 }
 
+input {
+	background-color: none !important;
+}
 
 
 /*----------------------------- Header ----------------------*/
@@ -363,10 +367,10 @@ body {
 	position: fixed;
 	width: 100px;
 	height: 100vh;
-	background-color: yellow;
 	right: 0;
 	z-index: 500000;
-	pointer-events: auto;
+	opacity: 1;
+	pointer-events: none;
 }
 
 
@@ -377,17 +381,16 @@ body {
   appearance: none;
   width: 100vh; /* Full-width */
   height: 100px; /* Specified height */
-  background: #d3d3d3; /* Grey background */
   outline: none; /* Remove outline */
   -webkit-transition: .2s; /* 0.2 seconds transition on hover */
   transition: opacity .2s;
   transform: rotate(90deg);
-  top: 0;
   z-index: 500000;
   margin-left: -47vh;
   margin-top: 820px;
+  background-color: rgba(243, 229, 255, 0.4);
+  pointer-events: auto;
 }
-
 
 
 #vert-range:hover {
@@ -399,18 +402,46 @@ body {
 #vert-range::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  width: 90px; /* Set a specific slider handle width */
-  height: 90px; /* Slider handle height */
+  width: 120px; /* Set a specific slider handle width */
+  height: 120px; /* Slider handle height */
   background: white; /* Green background */
   cursor: pointer; /* Cursor on hover */
+  transform: rotate(45deg);
 }
 
 #vert-range::-moz-range-thumb {
-  width: 90px; /* Set a specific slider handle width */
-  height: 90px; /* Slider handle height */
+  width: 120px; /* Set a specific slider handle width */
+  height: 120px; /* Slider handle height */
   background: white; /* Green background */
   cursor: pointer; /* Cursor on hover */
+  transform: rotate(45deg);
 }
+
+
+
+
+
+
+
+#count {
+	position: fixed;
+	display: block;
+	width: 20px;
+	height: 20px;
+	z-index: 600000;
+	background-color: blue;
+	margin-top: 30vh;
+	margin-left: 400px;
+	font-size: 100px;
+}
+
+
+
+
+
+
+
+
 
 
 
