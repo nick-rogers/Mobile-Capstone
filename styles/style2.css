@@ -69,7 +69,7 @@ body {
 	background-color: red;
 	z-index: 30000;
 	right: 0;
-	cursor: pointer;
+
 	transition: ease all 0.4s;
 }
 

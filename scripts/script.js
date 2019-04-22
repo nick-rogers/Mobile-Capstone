@@ -158,14 +158,14 @@ function hideShowNav (){
 
 
 
-
+/*
 $('.prog').bind("taphold", tapHoldHandler);
 
 function tapHoldHandler(event){
 	$(event.target).css('width', '150px');
 	$(event.target).css('background-color', 'green');
 	console.log('tapheld');
-}	
+}	*/
 
 
 
@@ -177,8 +177,29 @@ $('.prog').on("taphold", function(event){
 */
 
 
+/*
+$('.prog').mousedown(function(){
+
+console.log('mouse down');
+
+	$('.prog').css('width', '175px');
+
+});*/
 
 
+function clickHold(){
+	$('.prog').css('width', '175px');
+}
+
+
+
+var timeoutId = 0;
+
+$('#progID').on('mousedown', function() {
+    timeoutId = setTimeout(clickHold, 1000);
+}).on('mouseup mouseleave', function() {
+    clearTimeout(timeoutId);
+});
 
 
 
