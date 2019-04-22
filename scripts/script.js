@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 
 
-
+/*
 var open = false;
 $('.prog').click(function(){
 	if(open){
@@ -15,7 +15,7 @@ $('.prog').click(function(){
 		open = true;
 	}
 });
-
+*/
 
 
 
@@ -123,18 +123,6 @@ $('#h-b').click(function(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 var objectOpen = false;
 
 function toggleOverflow (){
@@ -148,8 +136,6 @@ function toggleOverflow (){
 	}
 
 };
-
-
 
 
 
@@ -173,6 +159,22 @@ function hideShowNav (){
 
 
 
+$('.prog').bind("taphold", tapHoldHandler);
+
+function tapHoldHandler(event){
+	$(event.target).css('width', '150px');
+	$(event.target).css('background-color', 'green');
+	console.log('tapheld');
+}	
+
+
+
+
+/*
+$('.prog').on("taphold", function(event){
+
+});
+*/
 
 
 

@@ -79,6 +79,7 @@ body {
 	position: absolute;
 	height: 0px;
 	background-color: yellow;
+	pointer-events: none;
 }
 
 
