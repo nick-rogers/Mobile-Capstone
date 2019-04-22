@@ -144,7 +144,7 @@ input {
 	position: absolute;
 	width: 100vw;
 	height: 50000px;
-	background-color: orange;
+	background-color: violet;
 	/*background-image: url(../images/Screen-20.png);*/
 	background-size: 100% 100%;
 	z-index: 5000;
@@ -379,17 +379,30 @@ input {
   position: absolute;
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
-  width: 100vh; /* Full-width */
+  width: 102vh; /* Full-width */
   height: 100px; /* Specified height */
   outline: none; /* Remove outline */
   -webkit-transition: .2s; /* 0.2 seconds transition on hover */
   transition: opacity .2s;
   transform: rotate(90deg);
   z-index: 500000;
-  margin-left: -47vh;
-  margin-top: 820px;
-  background-color: rgba(243, 229, 255, 0.4);
-  pointer-events: auto;
+  margin-left: -49vh;
+  background-color: rgba(243, 229, 255, 0.5);
+  pointer-events: none;
+
+
+
+
+  margin-top: 48vh;
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -402,19 +415,25 @@ input {
 #vert-range::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  width: 120px; /* Set a specific slider handle width */
-  height: 120px; /* Slider handle height */
+  width: 80px; /* Set a specific slider handle width */
+  height: 80px; /* Slider handle height */
   background: white; /* Green background */
   cursor: pointer; /* Cursor on hover */
+  border-style: none;
+  outline: none;
   transform: rotate(45deg);
+  pointer-events: auto;
 }
 
 #vert-range::-moz-range-thumb {
-  width: 120px; /* Set a specific slider handle width */
-  height: 120px; /* Slider handle height */
+  width: 80px; /* Set a specific slider handle width */
+  height: 80px; /* Slider handle height */
   background: white; /* Green background */
   cursor: pointer; /* Cursor on hover */
+  border-style: none;
+  outline: none;
   transform: rotate(45deg);
+  pointer-events: auto;
 }
 
 
