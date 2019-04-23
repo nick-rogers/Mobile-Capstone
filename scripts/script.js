@@ -4,22 +4,31 @@ $(document).ready(function(){
 	var ob01Title = "GNOMON";
 	var ob01Year = "2300 BCE";
 	var ob01Desc = "This Gnomon, or measuring stick, was found at the Chinese ruins of Taosi. The stick was used to measure the angle of sunlight and moonlight, and was among the earliest human attempts to measure our time.";
+	var ob01Loc = "Location1";
+
+
 
 	// Object #2 
 
 	var ob02Title = "STONEHENGE";
 	var ob02Year = "2000 BCE";
 	var ob02Desc = "Stonehenge, a stone monument in the British countryside, has perplexed archaeologist since its discovery. The monument was likely used by the english to to measure the seasons and for astronomy.";
+	var ob02Loc = "Location1";
+
+
 	// Object #3 
 
 	var ob03Title = "WATER CLOCK OF KARNAK";
 	var ob03Year = "1400 BCE";
 	var ob03Desc = "This water clock, created in modern-day Egypt, was used to mark out work times in Egypt. The bowl slowly emptied over a predictable duration, allowing the Egyptians to measure certain tasks. ";
+	var ob03Loc = "Location1";
+
 	// Object #4
 
 	var ob04Title = "LUXOR OBELISK";
 	var ob04Year = "1290 BCE";
 	var ob04Desc = "The Luxor Obelisk, created in Egypt and later taken to France, is an early example of monuments as timekeeping devices. The movement of the sun’s shadow and its angle allowed Egyptians to estimate the time of day.";
+	var ob04Loc = "Location1";
 
 	// Object #5
 
@@ -177,6 +186,7 @@ $(document).ready(function(){
 	// STORE IN ARRAYS 
 
 	var objectInfo = [[ob01Title,ob01Year,ob01Desc],[ob02Title,ob02Year,ob02Desc],[ob03Title,ob03Year,ob03Desc],[ob04Title,ob04Year,ob04Desc],[ob05Title,ob05Year,ob05Desc],[ob06Title,ob06Year,ob06Desc],[ob07Title,ob07Year,ob07Desc],[ob08Title,ob08Year,ob08Desc],[ob09Title,ob09Year,ob09Desc],[ob10Title,ob10Year,ob10Desc],[ob11Title,ob11Year,ob11Desc],[ob12Title,ob12Year,ob12Desc],[ob13Title,ob13Year,ob13Desc],[ob14Title,ob14Year,ob14Desc],[ob15Title,ob15Year,ob15Desc],[ob16Title,ob16Year,ob16Desc],[ob17Title,ob17Year,ob17Desc],[ob18Title,ob18Year,ob18Desc],[ob19Title,ob19Year,ob19Desc],[ob20Title,ob20Year,ob20Desc],[ob21Title,ob21Year,ob21Desc],[ob22Title,ob22Year,ob22Desc],[ob23Title,ob23Year,ob23Desc],[ob24Title,ob24Year,ob24Desc],[ob25Title,ob25Year,ob25Desc],[ob26Title,ob26Year,ob26Desc],[ob27Title,ob27Year,ob27Desc]];
+	var locations = [ob01Loc, ob02Loc, ob03Loc, ob04Loc];
 
 
 	var cutcanvas;
@@ -206,6 +216,7 @@ $(document).ready(function(){
 
 var martop, marginDiff, obID, parsed, myIMG;
 $('.mobile-section').click(function(){
+
 
 
 
@@ -253,7 +264,7 @@ $('.mobile-section').click(function(){
 	// FADE IN PROPOGATED CONTENT 
 	$('#mobile-content').css('display', 'block');
 	setTimeout(function(){
-
+		$('.top-grad').css('display', 'block');
 		$('#mobile-content').css('opacity', '1');
 
 
@@ -297,11 +308,13 @@ function fillContent(id, parsed){
 		$('#mob-object-title').text(objectInfo[((id.substring(1,2))-1)][0]);
 		$('#mob-date').text(objectInfo[((id.substring(1,2))-1)][1]);
 		$('#mob-body').text(objectInfo[((id.substring(1,2))-1)][2]);
+		$('#location-text').text(locations[((id.substring(1,2))-1)]);
 	}else {
 		//console.log('more');
 		$('#mob-object-title').text(objectInfo[((id.substring(0,2))-1)][0]);
 		$('#mob-date').text(objectInfo[((id.substring(0,2))-1)][1]);
 		$('#mob-body').text(objectInfo[((id.substring(0,2))-1)][2]);
+		$('#location-text').text('stuff');
 	}
 
 }
@@ -316,7 +329,7 @@ function fillContent(id, parsed){
 // Function to shrink and return division to its default status 
 $('#mob-x').click(function(){
 
-
+	$('.top-grad').css('display', 'none');
 	$('.mi').css('display', 'inline-block');
 
 	// Toggle the navigation elements and enable scroll

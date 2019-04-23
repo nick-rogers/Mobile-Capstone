@@ -195,6 +195,49 @@ input {
 
 
 
+#loc {
+	display: block;
+	position: absolute;
+	width: 100vw;
+	height: 100px;
+	margin-top: 70px;
+	text-align: center;
+}
+
+.l-mid {
+	display: inline-block;
+	width: 50vw;
+	height: inherit;
+}
+
+.location-im {
+	display: block;
+	width: 70px;
+	height: 70px;
+	left: 0;
+	float: left;
+	background-image: url(../images/location.svg);
+	background-size: 100% 100%;
+}
+
+
+#location-text {
+	display: block;
+	float: right;
+	width: 40vw;
+	height: inherit;
+	text-align: left;
+	font-family: Univers;
+	font-size: 50px;
+	line-height: 100px;
+	color: #666666;
+}
+
+
+
+
+
+
 #mob-object-title {
 	margin-top: 11vh;
 	display: block;
@@ -204,7 +247,8 @@ input {
 	text-align: center;
 	font-family: boldCondensed;
 	float: left;
-	width: 100vw;
+	width: 90vw;
+	margin-left: 5vw;
 }
 
 
@@ -219,6 +263,7 @@ input {
 	margin-top: -50px;
 	float: left;
 }
+
 
 
 #mob-x {
@@ -243,7 +288,7 @@ input {
 	background-color: #222222;
 	margin-left: 10vw;
 	top: 0;
-	margin-top: 55vh;
+	margin-top: 57vh;
 	font-family: sans-serif;
 	font-size: 55px;
 	color: white;
@@ -425,6 +470,18 @@ input {
 	z-index: 400000;
 }
 
+.top-grad {
+	display: block;
+	position: absolute;
+	width: inherit;
+	height: 250px;
+	background: rgb(34,34,34);
+	background: linear-gradient(0deg, rgba(34,34,34,0.10688025210084029) 0%, rgba(34,34,34,1) 100%);
+	top: 0;
+	display: none;
+}
+
+
 
 #mi01 {
 	background-image: url(../images/im01.png);
@@ -463,6 +520,9 @@ input {
 	margin-top: 3000px;
 }
 
+#mobsec03 {
+	margin-top: 5000px;
+}
 
 
 
@@ -716,15 +776,19 @@ input {
 	z-index: 3000;
 }
 
-#b-vid {
+#back-vid {
 	position: absolute;
-	transform: rotate(90deg);
-	width: 170vh;
-	height: 240vw;
+	width: 100vw;
+	height: 100vh;
 	z-index: 3500;
-	margin-left: -80vw;
-	margin-top: -20vh;
+	background-image: url(../images/part.gif);
+	background-size: 100% 100%;
 }
+
+
+
+
+
 
 
 
