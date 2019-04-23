@@ -4,35 +4,6 @@ $(document).ready(function(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$("#vert-range").bind("wheel", function() {
-    $("#vert-range").blur();
-});
-
-
-
-$('#vert-range').click(function(){
-	console.log('vert range');
-});
-
-
 function updateSlider(slideAmount){
 	var sliderDiv = document.getElementById("vert-range");
     console.log(sliderDiv);
@@ -72,10 +43,6 @@ $(document).scroll(function() {
 
 
 
-
-
-
-
 var martop, marginDiff;
 $('.mobile-section').click(function(){
 
@@ -96,6 +63,8 @@ $('.mobile-section').click(function(){
 		"position": "fixed", 
 		"top": "0",
 		"top": marginDiff+'px'});
+
+
 	
 	// Makes division marks animate, separate 
 	$('.split').css('height', '100vh');
@@ -115,6 +84,14 @@ $('.mobile-section').click(function(){
 	setTimeout(function(){
 		$('.mi').css('clip-path', 'none');
 		$('.mi').css('webkit-clip-path', 'none');
+		$('.mi').css('width', '800px');
+		$('.mi').css('height', '800px');
+
+		$(".mob-image").css({
+		"top": "30vh"
+		/*"transform": "scale(2)"*/});
+
+
 	}, 175);
 
 
@@ -138,6 +115,10 @@ $('#mob-x').click(function(){
 
 	$('.tri-con').css('display', 'none');
 
+
+
+	$('.mi').css('width', '440px');
+	$('.mi').css('height', '440px');
 	setTimeout(function(){
 		$('.mi').css('clip-path', 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)');
 		$('.mi').css('webkit-clip-path', 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)');
@@ -159,9 +140,15 @@ $('#mob-x').click(function(){
 	$(".mob-image").css({
 		"position": "absolute", 
 		"top": "0",
-		"top": '0px'});
-
+		"top": '0px',
+		/*"transform": "scale(1)"*/});
 });
+
+
+
+
+
+
 
 
 
@@ -202,34 +189,6 @@ function hideShowNav (){
 
 
 
-/*
-$('.prog').bind("taphold", tapHoldHandler);
-
-function tapHoldHandler(event){
-	$(event.target).css('width', '150px');
-	$(event.target).css('background-color', 'green');
-	console.log('tapheld');
-}	*/
-
-
-
-
-/*
-$('.prog').on("taphold", function(event){
-
-});
-*/
-
-
-/*
-$('.prog').mousedown(function(){
-
-console.log('mouse down');
-
-	$('.prog').css('width', '175px');
-
-});*/
-
 
 function clickHold(){
 	$('.prog').css('width', '175px');
@@ -252,23 +211,6 @@ $('.prog').mousedown(function(){
 
 });
 
-
-
-
-
-//$('#dt').draggable();
-
-
-
-/*
-var timeoutId = 0;
-
-$('#progID').on('mousedown', function() {
-    timeoutId = setTimeout(clickHold, 1000);
-}).on('mouseup mouseleave', function() {
-    clearTimeout(timeoutId);
-});
-*/
 
 
 
