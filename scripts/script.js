@@ -239,7 +239,7 @@ $('.mobile-section').click(function(){
 		"position": "fixed", 
 		"top": "0",
 		"top": marginDiff+'px'});
-	
+
 
 	$( this ).find( '.split' ).css('height', '100vh');
 	$( this ).find( '.split1' ).css('margin-top', '-100vh');
@@ -250,7 +250,14 @@ $('.mobile-section').click(function(){
 
 
 
+	// FADE IN PROPOGATED CONTENT 
 	$('#mobile-content').css('display', 'block');
+	setTimeout(function(){
+
+		$('#mobile-content').css('opacity', '1');
+
+
+	}, 400);
 
 
 
@@ -335,8 +342,8 @@ $('#mob-x').click(function(){
 
 
 
+	$('#mobile-content').css('opacity', '0');
 	$('#mobile-content').css('display', 'none');
-
 
 
 
