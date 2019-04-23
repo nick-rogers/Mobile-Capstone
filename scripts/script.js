@@ -204,14 +204,19 @@ $(document).ready(function(){
 
 
 
-var martop, marginDiff, obID, parsed;
+var martop, marginDiff, obID, parsed, myIMG;
 $('.mobile-section').click(function(){
+
 
 
 	obID = $(this).attr('id');
 	obID = obID.substring(6,8);
 	parsed = parseInt(obID);
 
+	myIMG = "#mi"+obID;
+
+
+	// Place the correct info on the objects in divs 
 	fillContent(obID, parsed);
 
 
@@ -228,21 +233,20 @@ $('.mobile-section').click(function(){
 	martop = parseInt(martop);
 	marginDiff = martop-scrolled;
 
+
 	// Mobile image is made fixed and placed correctly relative to the division
 	$(".mob-image").css({
 		"position": "fixed", 
 		"top": "0",
 		"top": marginDiff+'px'});
-
-
 	
-	// Makes division marks animate, separate 
-	$('.split').css('height', '100vh');
-	$('.split1').css('margin-top', '-100vh');
-	$('.split2').css('margin-top', '0vh');
-	$('.fill').css('height', '100%');
-	$('.fill1').css('bottom', '0');
-	$('.fill2').css('top', '0');
+
+	$( this ).find( '.split' ).css('height', '100vh');
+	$( this ).find( '.split1' ).css('margin-top', '-100vh');
+	$( this ).find( '.split2' ).css('margin-top', '0vh');
+	$( this ).find( '.fill' ).css('height', '100%');
+	$( this ).find( '.fill1' ).css('bottom', '0');
+	$( this ).find( '.fill2' ).css('top', '0');
 
 
 
@@ -252,15 +256,16 @@ $('.mobile-section').click(function(){
 
 
 	setTimeout(function(){
-		$('.mi').css('clip-path', 'none');
-		$('.mi').css('webkit-clip-path', 'none');
-		$('.mi').css('width', '800px');
-		$('.mi').css('height', '800px');
+		$('.mi').css('display', 'none');
+		$(myIMG).css('display', 'inline-block');
+		$(myIMG).css('clip-path', 'none');
+		$(myIMG).css('webkit-clip-path', 'none');
+		$(myIMG).css('width', '800px');
+		$(myIMG).css('height', '800px');
 
 		$(".mob-image").css({
 		"top": "30vh"
 		/*"transform": "scale(2)"*/});
-
 
 	}, 175);
 
@@ -280,8 +285,7 @@ function fillContent(id, parsed){
 
 	console.log('obID: ' + id + " parsed: " + parsed);
 
-
-	if(id.substring(0,1) < 1){
+	if(parsed < 10){
 		//console.log('less');
 		$('#mob-object-title').text(objectInfo[((id.substring(1,2))-1)][0]);
 		$('#mob-date').text(objectInfo[((id.substring(1,2))-1)][1]);
@@ -293,8 +297,10 @@ function fillContent(id, parsed){
 		$('#mob-body').text(objectInfo[((id.substring(0,2))-1)][2]);
 	}
 
-
 }
+
+
+
 
 
 
@@ -302,6 +308,9 @@ function fillContent(id, parsed){
 
 // Function to shrink and return division to its default status 
 $('#mob-x').click(function(){
+
+
+	$('.mi').css('display', 'inline-block');
 
 	// Toggle the navigation elements and enable scroll
 	toggleOverflow();

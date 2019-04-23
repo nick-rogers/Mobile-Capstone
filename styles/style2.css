@@ -410,10 +410,67 @@ input {
 	background-color: #222222;
 	-webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-	background-image: url(../images/im03.png);
 	background-size: 100% 100%;
 	transition: ease height 0.5s, ease width 0.5s;
+	z-index: 400000;
 }
+
+
+#mi01 {
+	background-image: url(../images/im01.png);
+}
+#mi02 {
+	background-image: url(../images/im02.png);
+}
+#mi03 {
+	background-image: url(../images/im03.png);
+}
+#mi04 {
+	background-image: url(../images/im04.png);
+}
+#mi05 {
+	background-image: url(../images/im05.png);
+}
+#mi06 {
+	background-image: url(../images/im06.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+#mobsec01 {
+
+}
+
+#mobsec02 {
+	margin-top: 3000px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -422,14 +479,15 @@ input {
 	display: block;
 	position: absolute;
 	width: 100vw;
-	height: 300px;
+	height: 250px;
 	font-family: sans-serif;
 	font-size: 90px;
 	color: #222222;
-	margin-top: -49vw;
+	margin-top: -40vw;
 	text-align: center;
 	pointer-events: none;
 }
+
 
 .ds {
 	display: block;
@@ -448,14 +506,17 @@ input {
 
 .mob-ob, .mob-date {
 	display: inline-block;
-	height: inherit;
 	width: 90vw;
 	margin-top: 0;
 }
 
 .mob-ob {
+	position: absolute;
+	display: block;
+	width: 100vw;
 	font-size: 115px;
 	font-family: boldCondensed;
+	bottom: 0;
 }
 
 .mob-date {
