@@ -1,3 +1,33 @@
+@font-face {
+  font-family: med;
+  src: url(../fonts/IBMPlexSerif-Medium.ttf);
+}
+
+@font-face {
+  font-family: boldCondensed;
+  src: url(../fonts/Univers-CondensedBold.otf);
+}
+
+@font-face {
+  font-family: extended;
+  src: url(../fonts/extended.otf);
+}
+
+@font-face {
+  font-family: Programm;
+  src: url(../fonts/DiatypeProgrammFinal.otf);
+}
+
+@font-face {
+  font-family: Univers;
+  src: url(../fonts/Univers.ttf);
+}
+
+
+
+
+
+
 body {
 	margin: 0;
 	background-color: #222222;
@@ -158,18 +188,25 @@ input {
 	margin-top: 11vh;
 	display: block;
 	font-family: sans-serif;
-	font-size: 80px;
+	font-size: 130px;
 	color: #f0f0f0;
 	text-align: center;
+	font-family: boldCondensed;
+	float: left;
+	width: 100vw;
 }
 
 
 #mob-date {
+	width: 100vw;
 	display: block;
 	font-family: sans-serif;
-	font-size: 50px;
+	font-size: 70px;
 	color: #f0f0f0;
 	text-align: center;
+	font-family: extended;
+	margin-top: -50px;
+	float: left;
 }
 
 
@@ -199,7 +236,7 @@ input {
 	font-family: sans-serif;
 	font-size: 55px;
 	color: white;
-	line-height: 70px;
+	line-height: 80px;
 	padding-left: 20px;
 	border-style: solid;
 	border-color: #f0f0f0;
@@ -223,30 +260,6 @@ input {
 
 
 /*--------------------------- Main scroll section ------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -405,13 +418,50 @@ input {
 
 
 
+.titles {
+	display: block;
+	position: absolute;
+	width: 100vw;
+	height: 300px;
+	font-family: sans-serif;
+	font-size: 90px;
+	color: #222222;
+	margin-top: -49vw;
+	text-align: center;
+	pointer-events: none;
+}
+
+.ds {
+	display: block;
+	position: absolute;
+	width: 100vw;
+	height: 200px;
+	font-family: sans-serif;
+	font-size: 90px;
+	color: #222222;
+	margin-top: 28vw;
+	text-align: center;
+	pointer-events: none;
+}
 
 
 
+.mob-ob, .mob-date {
+	display: inline-block;
+	height: inherit;
+	width: 90vw;
+	margin-top: 0;
+}
 
+.mob-ob {
+	font-size: 115px;
+	font-family: boldCondensed;
+}
 
-
-
+.mob-date {
+	font-size: 100px;
+	font-family: extended;
+}
 
 
 
